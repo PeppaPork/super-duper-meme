@@ -17,7 +17,7 @@ export class HomePage {
   ref = firebase.database().ref('infos/');
 
   //  listening any value changes from Firebase Database
-  constructor(public router: Router, public alertController: AlertController) {
+  constructor(public router: Router, public route: ActivatedRoute, public alertController: AlertController) {
     this.ref.on('value', resp => {
       this.infos = [];
       this.infos = snapshotToArray(resp);

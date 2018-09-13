@@ -12,7 +12,6 @@ const config = {
   databaseURL: 'https://super-duper-meme.firebaseio.com',
   projectId: 'super-duper-meme',
   storageBucket: 'super-duper-meme.appspot.com',
-  messagingSenderId: '446656353588',
 };
 
 @Component({
